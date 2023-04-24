@@ -1,0 +1,475 @@
+/*MENU*/
+.corp {
+    background-color: white;
+
+
+}
+
+.barremenu {
+    position: sticky;
+    top: 0px;
+
+
+}
+
+.parent {
+    border: 4px outset black;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3A8021;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+
+}
+
+.remedeanimale {
+    justify-self: start;
+    color: #E0ACAC;
+    font-family: 'Satisfy', cursive;
+
+    font-size: 35px;
+}
+
+.parent .enfant {
+    display: flex;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+    margin: 0px 0px 0px 50%;
+    font-size: 20px;
+
+
+}
+
+.imgmenu {
+    /* cest ok*/
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.enfant {
+    display: flex;
+    /*cest ok*/
+    list-style: none;
+
+
+}
+
+.parent .enfant li {
+    /* cest ok*/
+    margin-right: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid green;
+}
+
+.parent .enfant li:hover {
+    border-bottom-color: #000;
+}
+
+.lien1 {
+    text-decoration: none;
+    cursor: pointer;
+    color: #E0ACAC
+}
+
+/*FIN DU MENU*/
+/* DEBUT DE LA PAGE1*/
+
+.section {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.un {
+
+    text-align: center;
+    background-image: url(img/imgSerpentBleu.png);
+    height: 1140px;
+
+
+
+}
+
+.paragraphe1 {
+    /*display: flex;
+    text-align: justify;*/
+    width: 40%;
+
+    margin: auto;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    margin: 40% 0px 20px 0px;
+
+
+}
+
+.deux {
+    padding: 10px;
+    margin: 10px;
+}
+
+.imgautresanimaux3 {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+
+    border-radius: 15px;
+    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    /*ombres des img*/
+}
+
+.imgserpent2 {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 15px;
+    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    /*ombres des img*/
+}
+
+.article {
+
+    font-size: 25px;
+    text-align: center;
+
+    font-family: 'Satisfy', cursive;
+}
+
+/* FIN DE LA PAGE 1*/
+/* FOOTER*/
+
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #E0ACAC;
+    border: 4px outset grey;
+}
+
+
+.f1 {
+    list-style-image: url(img/imgFooter.png);
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: 'Satisfy', cursive;
+}
+
+.sousfooter2 .instagram {
+
+    text-decoration: none;
+    width: 50px;
+    margin-top: 36%;
+    margin-right: 10px
+}
+
+.f2 {
+    list-style-type: none;
+}
+
+.sousfooter1 {
+    margin-left: 30px;
+}
+
+/*FIN DU FOOTER*/
+/* DEBUT DE LA PAGE2*/
+
+.titrepage2 {
+
+    font-family: 'Satisfy', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    color: #E0ACAC;
+    text-decoration: underline;
+    border: 5px double black;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 26px;
+    margin: 10px 0px 20px 0px;
+}
+
+.article2 {
+    background-color: aqua;
+    display: flex;
+    margin: 20px 0px 30px 20px;
+    /*haut,gauche,bas,droite*/
+}
+
+.imgpage2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    /*ombres des img*/
+
+    cursor: grab;
+}
+
+.article2 .paragraphe2 {
+    background-color: pink;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+
+    padding: 50px 20px 50px 20px;
+    text-align: left;
+
+
+}
+
+.soustitre2 {
+    background-color: #3A8021;
+    display: flex;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    color: #E0ACAC;
+    font-size: 24px;
+    padding: 15px;
+
+}
+
+/* FIN DE LA PAGE 2*/
+
+/*DEBUT DE LA PAGE3 */
+.titrepage3 {
+
+    font-family: 'Satisfy', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    color: #E0ACAC;
+    text-decoration: underline;
+    border: 5px double #3A8021;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 26px;
+    margin: 10px 0px 20px 0px;
+}
+
+.article3 {
+    background-color: aqua;
+    display: flex;
+    margin: 20px 0px 30px 20px;
+    /*haut,gauche,bas,droite*/
+}
+
+.imgpage3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: grab;
+
+}
+
+.article3 .paragraphe3 {
+    background-color: pink;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    padding: 50px 20px 50px 20px;
+    text-align: left;
+
+}
+
+.soustitre3 {
+    background-color: #3A8021;
+    display: flex;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    color: #E0ACAC;
+    font-size: 24px;
+    padding: 15px;
+}
+
+/*FIN DE LA PAGE3*/
+
+
+/*DEBUT DE LA PAGE 4 CONTACT*/
+
+/*.titrecontact {
+    font-size: 30px;
+    margin: 30px 0px 30px 0px;
+
+    text-align: center;
+    background-color: #E0ACAC;
+}
+
+.formulairecontact {
+    background-color: royalblue;
+    align-items: center;
+
+    border: solid 5px black;
+    /*width: 500px;
+    height: 300px;
+    font-size: 20px;
+
+
+}*/
+
+.pied-formulaire {
+    /*c'est le body*/
+    text-align: center;
+}
+
+.pageform {
+
+    background-color: aqua;
+    flex-direction: column;
+
+
+
+}
+
+/*pour centrer mon formulaire ...*/
+.formulaire {
+    background-color: #E0ACAC;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.formulaire .titreform {
+    font-size: 20px;
+
+}
+
+/*pour faire la barre de separation*/
+.formulaire .separation {
+    width: 100%;
+    height: 1px;
+    background-color: #3A8021;
+
+}
+
+/*pour travailler les elements dans le formulaire*/
+.formulaire .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.formulaire .corps-formulaire .groupe {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*pour travailler ce qui se trouve a gauche*/
+
+.formulaire .corps-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #3A8021;
+    border-radius: 5px;
+}
+
+.formulaire .corps-formulaire .droite {
+    margin-left: 40px;
+    /* espace entre la gauche et la droite*/
+
+}
+
+.formulaire .corps-formulaire .droite .groupe {
+    height: 100%;
+}
+
+.formulaire .corps-formulaire .droite .groupe .message {
+    /*Dans l'element droite  
+    /*texarea*/
+    margin-top: 5px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: 2px solid #3A8021;
+    border-radius: 5px;
+    resize: none;
+    height: 75%;
+}
+
+.pied-formulaire .bouton {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0, 5s;
+    /* effectuez le temps quand le cursor est sur le button*/
+
+
+}
+
+.pied-formulaire .bouton:hover {
+    transform: scale(1.05);
+    /*faire grossir le bouton quand le cursor est dessus*/
+
+
+}
+
+
+
+
+/*FIN DE LA PAGE 4 CONTACT*/
+
+/*DEBUT DE LA PAGE 7 404 ERROR*/
+
+html, body {
+    height: 100%;
+}
+
+.corps {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.error {
+    padding: 125px 50px 50px;
+    flex-grow: 1;
+
+}
+
+.phraseerror {
+
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:920px) {
+
+    /*travail sur le block message margin*/
+    .formulaire .corps-formulaire .droite {
+        margin-left: 0px;
+
+
+    }
+}
