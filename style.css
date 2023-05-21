@@ -1,43 +1,42 @@
-/*MENU*/
-.corp {
-    background-color: white;
-
-
+* {
+    margin: 0;
+    padding: 0;
 }
+
+/*****MENU*****/
 
 .barremenu {
     position: sticky;
-    top: 0px;
-
-
+    top: 0%;
 }
 
-.parent {
-    border: 4px outset black;
-    display: flex;
-    justify-content: space-between;
+.parent-nav {
     background-color: #3A8021;
-    align-items: center;
     position: sticky;
     top: 0%;
-
+    border: 4px outset black;
 }
 
-.remedeanimale {
-    justify-self: start;
-    color: #E0ACAC;
-    font-family: 'Satisfy', cursive;
-
-    font-size: 35px;
-}
-
-.parent .enfant {
+.enfant-ul {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     font-family: 'Satisfy', cursive;
-    margin: 0px 0px 0px 50%;
     font-size: 20px;
+}
 
+.sous-enfant-div1 {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.sous-enfant-div2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-li {
+    list-style-type: none;
+    margin: 20px;
 
 }
 
@@ -47,27 +46,22 @@
     width: 70px;
     height: 70px;
     border-radius: 50px;
-    margin-left: 15px;
     font-size: 20px;
 }
 
-.enfant {
-    display: flex;
-    /*cest ok*/
-    list-style: none;
+.remedeanimale {
 
+    color: #E0ACAC;
+    font-family: 'Satisfy', cursive;
+    margin: 20px 0px 5px 10px;
 
+    font-size: 35px;
 }
 
-.parent .enfant li {
-    /* cest ok*/
-    margin-right: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid green;
-}
-
-.parent .enfant li:hover {
-    border-bottom-color: #000;
+.lien1:hover {
+    color: #F87575;
+    font-size: 24px;
+    transition: 1s;
 }
 
 .lien1 {
@@ -76,81 +70,32 @@
     color: #E0ACAC
 }
 
-/*FIN DU MENU*/
-/* DEBUT DE LA PAGE1*/
-
-.section {
-
-    display: flex;
-    justify-content: space-around;
-
+.lien2 {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
 }
 
-
-
-.un {
-
-    text-align: center;
-    background-image: url(img/imgSerpentBleu.png);
-    height: 1140px;
-
-
-
+.lien2:hover {
+    color: #F87575;
+    font-size: 30px;
+    transition: 1s;
 }
 
-.paragraphe1 {
-    /*display: flex;
-    text-align: justify;*/
-    width: 40%;
-
-    margin: auto;
-    font-family: 'Satisfy', cursive;
-    font-size: 25px;
-    color: white;
-    display: flex;
-    margin: 40% 0px 20px 0px;
-
-
-}
-
-.deux {
-    padding: 10px;
+.menu-logo {
+    height: 40px;
+    width: 50px;
+    border-radius: 18px;
     margin: 10px;
+    cursor: pointer;
 }
 
-.imgautresanimaux3 {
-    margin-top: 20px;
-    width: 300px;
-    height: 300px;
+/*.menu-lo:hover {
+    transition: 5s;
+}*/
 
-    border-radius: 15px;
-    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    /*ombres des img*/
-}
-
-.imgserpent2 {
-    width: 300px;
-    height: 300px;
-
-    border-radius: 15px;
-    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    /*ombres des img*/
-}
-
-.article {
-
-    font-size: 25px;
-    text-align: center;
-
-    font-family: 'Satisfy', cursive;
-}
-
-/* FIN DE LA PAGE 1*/
-/* FOOTER*/
+/*****FIN DU MENU*****/
+/*****DEBUT DU FOOTER*****/
 
 
 .footer1 {
@@ -185,8 +130,86 @@
     margin-left: 30px;
 }
 
-/*FIN DU FOOTER*/
-/* DEBUT DE LA PAGE2*/
+/*****FIN DU FOOTER*****/
+/***** DEBUT DE LA PAGE1 HOME*****/
+
+.section {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.un {
+
+    text-align: center;
+    background-image: url(img/imgSerpentBleu.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.paragraphe1 {
+
+    text-align: justify;
+    width: 40%;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    color: white;
+
+    margin: 40% 0px 20px 25px;
+
+
+}
+
+.deux {
+    padding: 10px;
+    margin: 10px;
+    /*jouer avec les p et m de la photo les serpent*/
+}
+
+.imgautresanimaux3 {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+
+    border-radius: 15px;
+    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    /*ombres des img*/
+}
+
+.imgserpent2 {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 15px;
+    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    /*ombres des img*/
+}
+
+.article {
+
+    font-size: 25px;
+    text-align: center;
+
+    font-family: 'Satisfy', cursive;
+    /*modifacation des liens serpents et  autres animaux*/
+}
+
+/*****FIN DE LA PAGE 1 HOME*****/
+
+/* DEBUT DE LA PAGE2 SNAKE*/
+
 
 .titrepage2 {
 
@@ -196,6 +219,7 @@
     padding: 2%;
     color: #E0ACAC;
     text-decoration: underline;
+    /*surlignement*/
     border: 5px double black;
     border-radius: 10px 10px 10px 10px;
     font-size: 26px;
@@ -203,7 +227,7 @@
 }
 
 .article2 {
-    background-color: aqua;
+
     display: flex;
     margin: 20px 0px 30px 20px;
     /*haut,gauche,bas,droite*/
@@ -222,19 +246,21 @@
 }
 
 .article2 .paragraphe2 {
-    background-color: pink;
+
     font-size: 20px;
     margin: 0px 0px 0px 10px;
     text-align: center;
 
     padding: 50px 20px 50px 20px;
     text-align: left;
+    font-family: 'Satisfy', cursive;
+    line-height: 30px;
 
 
 }
 
 .soustitre2 {
-    background-color: #3A8021;
+    background-color: black;
     display: flex;
     justify-content: center;
     font-family: 'Satisfy', cursive;
@@ -244,9 +270,9 @@
 
 }
 
-/* FIN DE LA PAGE 2*/
+/*****FIN DE LA PAGE 2 SNAKE****/
 
-/*DEBUT DE LA PAGE3 */
+/*****DEBUT DE LA PAGE3 ANIMALS**/
 .titrepage3 {
 
     font-family: 'Satisfy', cursive;
@@ -262,7 +288,7 @@
 }
 
 .article3 {
-    background-color: aqua;
+    /*article 3 est le parent des img et p */
     display: flex;
     margin: 20px 0px 30px 20px;
     /*haut,gauche,bas,droite*/
@@ -280,19 +306,20 @@
 }
 
 .article3 .paragraphe3 {
-    background-color: pink;
+
     font-size: 20px;
     margin: 0px 0px 0px 10px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    font-family: 'Satisfy', cursive;
     padding: 50px 20px 50px 20px;
     text-align: left;
+    line-height: 30px;
+
 
 }
 
 .soustitre3 {
-    background-color: #3A8021;
+    background-color: black;
     display: flex;
     justify-content: center;
     font-family: 'Satisfy', cursive;
@@ -301,76 +328,43 @@
     padding: 15px;
 }
 
-/*FIN DE LA PAGE3*/
+/****FIN DE LA PAGE3 ANIMALS****/
 
 
 /*DEBUT DE LA PAGE 4 CONTACT*/
 
-/*.titrecontact {
-    font-size: 30px;
-    margin: 30px 0px 30px 0px;
 
-    text-align: center;
-    background-color: #E0ACAC;
-}
-
-.formulairecontact {
-    background-color: royalblue;
-    align-items: center;
-
-    border: solid 5px black;
-    /*width: 500px;
-    height: 300px;
-    font-size: 20px;
-
-
-}*/
-
-.pied-formulaire {
-    /*c'est le body*/
-    text-align: center;
-}
-
-.pageform {
-
-    background-color: aqua;
-    flex-direction: column;
-
-
-
-}
 
 /*pour centrer mon formulaire ...*/
 .formulaire {
+
     background-color: #E0ACAC;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     width: 35%;
     margin: auto;
     margin-top: 10%;
     padding: 30px;
     border-radius: 10px;
+    border: 5px solid #000;
+    margin-bottom: 25%;
+    font-family: 'Satisfy', cursive;
+
 }
 
-.formulaire .titreform {
+.titreform {
     font-size: 20px;
-
 }
 
-/*pour faire la barre de separation*/
-.formulaire .separation {
-    width: 100%;
-    height: 1px;
-    background-color: #3A8021;
-
-}
-
-/*pour travailler les elements dans le formulaire*/
-.formulaire .corps-formulaire {
+.corps-formulaire {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    justify-content: space-around;
+
+
+}
+
+.corps-formulaire .gauche .groupe {
+    margin: 20px 0 20px 5px;
+
 }
 
 .formulaire .corps-formulaire .groupe {
@@ -380,64 +374,309 @@
 
 }
 
-/*pour travailler ce qui se trouve a gauche*/
-
-.formulaire .corps-formulaire .gauche .groupe input {
-    margin-top: 5px;
-    padding: 10px 5px 10px 5px;
-    border: 1px solid #3A8021;
-    border-radius: 5px;
-}
-
 .formulaire .corps-formulaire .droite {
-    margin-left: 40px;
-    /* espace entre la gauche et la droite*/
+    display: flex;
+    background-color: #E0ACAC;
+    margin-left: 50px;
+    /* pour creer un espace entre la gauche et la droite*/
+
 
 }
 
-.formulaire .corps-formulaire .droite .groupe {
-    height: 100%;
+.label-info {
+    margin: 10px;
 }
 
-.formulaire .corps-formulaire .droite .groupe .message {
-    /*Dans l'element droite  
-    /*texarea*/
-    margin-top: 5px;
+.input-info {
     padding: 10px;
-    background-color: blueviolet;
-    border: 2px solid #3A8021;
+    border: solid 2px black;
     border-radius: 5px;
-    resize: none;
-    height: 75%;
+    font-family: 'Satisfy', cursive;
+
 }
 
-.pied-formulaire .bouton {
-    margin-top: 10px;
-    background-color: red;
+.label-message {
+    margin: 10px;
+}
+
+.textarea-message {
+
+    height: 150px;
+    resize: none;
+    border: 2px solid black;
+    font-family: 'Satisfy', cursive;
+
+}
+
+
+/*pour faire la barre de separation*/
+.trait {
+    background-color: #3A8021;
+    height: 5px;
+}
+
+.bouton {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 70px;
+    background-color: #3A8021;
     color: white;
-    border: none;
-    padding: 10px 20px;
+    font-family: 'Satisfy', cursive;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0, 5s;
     /* effectuez le temps quand le cursor est sur le button*/
 
-
 }
 
-.pied-formulaire .bouton:hover {
-    transform: scale(1.05);
+
+.bouton:hover {
     /*faire grossir le bouton quand le cursor est dessus*/
+    transform: scale(1.05);
+}
+
+/*FIN DE LA PAGE 4 CONTACT */
+
+/*DEBUT DE LA PAGE 5 CONNEXION*/
+
+/*pour centrer mon formulaire ...*/
+.formulaireco {
+
+    background-color: #E0ACAC;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 5px solid #000;
+    margin-bottom: 25%;
+    font-family: 'Satisfy', cursive;
+
+}
+
+.titreformco {
+    font-size: 20px;
+}
+
+.corps-formulaireco {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.corps-formulaireco .gaucheco .groupeco {
+    margin: 20px 0 20px 5px;
+
+}
+
+.formulaireco .corps-formulaireco .groupeco {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-infoco {
+    margin: 10px;
+    font-family: 'Satisfy', cursive;
+}
+
+.input-infoco {
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-family: 'Satisfy', cursive;
+
+}
+
+/*pour faire la barre de separation*/
+.traitco {
+    background-color: #3A8021;
+    height: 5px;
+}
+
+.boutonco {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 70px;
+    /*margin-top: 30px;*/
+    background-color: #3A8021;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0, 5s;
+    /* effectuez le temps quand le cursor est sur le button*/
+}
+
+.boutonco:hover {
+    /*faire grossir le bouton quand le cursor est dessus*/
+    transform: scale(1.05);
+}
+
+/*FIN DE LA PAGE 5 FORMCONNEXION*/
+
+/*DEBUT DE LA PAGE 6 FORMINSCRIPTION*/
 
 
+/*pour centrer mon formulaire ...*/
+.formulaire-in {
+
+    background-color: #E0ACAC;
+    text-align: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 35%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 5px solid #000;
+    margin-bottom: 25%;
+    font-family: 'Satisfy', cursive;
+
+}
+
+.titreform-in {
+    font-size: 20px;
+}
+
+.corps-formulaire-in {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.corps-formulaire-in .gauche-in .groupe-in {
+    margin: 20px 0 20px 5px;
+
+}
+
+.formulaire-in .corps-formulaire-in .groupe-in {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulaire-in .corps-formulaire-in .droite-in {
+    display: flex;
+    background-color: #E0ACAC;
+    margin-left: 50px;
+    /* pour creer un espace entre la gauche et la droite*/
+
+}
+
+.label-info-in {
+    margin: 10px;
+    font-family: 'Satisfy', cursive;
+}
+
+.input-info-in {
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-family: 'Satisfy', cursive;
+
+}
+
+/*pour faire la barre de separation*/
+.trait-in {
+    background-color: #3A8021;
+    height: 5px;
+}
+
+.bouton-in {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 70px;
+    /*margin-top: 30px;*/
+    background-color: #3A8021;
+    color: white;
+    font-family: 'Satisfy', cursive;
+
+
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0, 5s;
+    /* effectuez le temps quand le cursor est sur le button*/
+}
+
+.bouton-in:hover {
+    /*faire grossir le bouton quand le cursor est dessus*/
+    transform: scale(1.05);
+}
+
+/*****FIN DE LA PAGE 6 FORMINSCRIPTION*****/
+
+/****DEBUT DE LA PAGE 7 LES DIVERS********/
+.titrejs {
+    font-family: 'Satisfy', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    color: #E0ACAC;
+    text-decoration: underline;
+    /*surlignement*/
+    border: 5px double black;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 26px;
+    margin: 10px 0px 20px 0px;
+
+}
+
+.imagejs {
+    width: 300px;
+    height: 300px;
+}
+
+.soustitrejs {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.paragraphejs {
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+
+    padding: 50px 20px 50px 20px;
+    text-align: left;
+    font-family: 'Satisfy', cursive;
+    line-height: 30px;
+    display: none;
+}
+
+.boutonjs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.buttonjs {
+
+    background-color: #3A8021;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0, 5s;
+    /* effectuez le temps quand le cursor est sur le button*/
+    margin-top: 15px;
 }
 
 
 
-
-/*FIN DE LA PAGE 4 CONTACT*/
-
-/*DEBUT DE LA PAGE 7 404 ERROR*/
+/*******DEBUT DE LA PAGE 7 404 ERROR*******/
 
 html, body {
     height: 100%;
@@ -453,7 +692,6 @@ html, body {
 .error {
     padding: 125px 50px 50px;
     flex-grow: 1;
-
 }
 
 .phraseerror {
@@ -463,13 +701,342 @@ html, body {
     font-size: 30px;
 }
 
+/************FIN DE LA PAGE 7 ERROR**********/
 
-@media screen and (max-width:920px) {
 
-    /*travail sur le block message margin*/
+
+/******RESPONSIVE*******/
+/* Media Queries pour écran de 480px à 980px */
+
+/*@media screen and (min-width: 380px) and (max-width: 980px)*/
+@media screen and (max-width: 980px) {
+
+    /***** page 1 HOME *****/
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .paragraphe1 {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+
+    .imgmenu {
+        max-width: 100px;
+        margin-right: 10px;
+    }
+
+    .remedeanimale {
+        display: none;
+    }
+
+    /*.enfant {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }*/
+
+    /*.menu {
+        display: block;
+        margin: 5px 0;
+    }*/
+
+    .lien1 {
+        display: block;
+        padding: 5px 0;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* Articles */
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .article {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .imgserpent2 {
+        max-width: 100%;
+        height: 290px;
+    }
+
+    .imgautresanimaux3 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .enfant2,
+    .enfant3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .sousfooter1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .f1,
+    .f2 {
+        margin: 0px 10px;
+        list-style: none;
+
+    }
+
+    .sousfooter2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .instagram {
+        max-width: 30px;
+        height: auto;
+    }
+
+
+    /***** FIN DE LA PAGE 1 HOME*****/
+    /***** DEBUT DE LA PAGE 2 SNAKE**/
+
+    .titrepage2 {
+
+        font-family: 'Satisfy', cursive;
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        color: #E0ACAC;
+        text-decoration: underline;
+        border: 5px double black;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 26px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .article2 {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgpage2 {
+        margin: auto;
+        width: 200px;
+        height: 150px;
+        border-radius: 15px;
+        /*ombres des img*/
+        cursor: grab;
+    }
+
+    .article2 .paragraphe2 {
+
+        font-size: 15px;
+        margin: 0px 0px 0px 10px;
+        padding: 50px 20px 50px 20px;
+    }
+
+    .soustitre2 {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        font-family: 'Satisfy', cursive;
+        color: #E0ACAC;
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    /***** FIN DE LA PAGE 2 SNAKE*****/
+    /***** DEBUT DE LA PAGE 3 ANIMALS*/
+
+    .titrepage3 {
+
+        font-family: 'Satisfy', cursive;
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        color: #E0ACAC;
+        text-decoration: underline;
+        border: 5px double #3A8021;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 26px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .article3 {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgpage3 {
+        margin: auto;
+        width: 200px;
+        height: 150px;
+        border-radius: 15px;
+        cursor: grab;
+    }
+
+    .article3 .paragraphe3 {
+
+        font-size: 15px;
+        margin: 0px 0px 0px 10px;
+        text-align: center;
+
+
+        padding: 50px 20px 50px 20px;
+        text-align: left;
+    }
+
+    .soustitre3 {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        font-family: 'Satisfy', cursive;
+        color: #E0ACAC;
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    /*FIN DE LA PAGE 3 ANIMALS*/
+    /*DEBUT DE LA PAGE 4 FORMCONTACT*/
+
+    .mesure-page {
+        height: 100%;
+    }
+
+    /*pour centrer mon formulaire ...*/
+    .formulaire {
+
+        background-color: #E0ACAC;
+        width: auto;
+        border-radius: 10px;
+        border: 5px solid #000;
+        margin-bottom: 25%;
+    }
+
+    .titreform {
+        font-size: 20px;
+    }
+
+    .corps-formulaire .gauche .groupe {
+        margin: 20px 0 20px 5px;
+
+    }
+
+    .formulaire .corps-formulaire .groupe {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .formulaire .corps-formulaire .droite {
-        margin-left: 0px;
+        display: flex;
+        background-color: #E0ACAC;
+        margin-left: 5px;
+        /* pour creer un espace entre la gauche et la droite*/
 
 
     }
+
+    .label-info {
+        margin: 10px;
+    }
+
+    .input-info {
+        padding: 10px;
+        border: solid 2px black;
+        border-radius: 5px;
+
+    }
+
+    .label-message {
+        margin: 10px;
+    }
+
+    .textarea-message {
+
+        height: 150px;
+        resize: none;
+        border: 2px solid black;
+
+    }
+
+    /*pour faire la barre de separation*/
+    .trait {
+        background-color: #3A8021;
+        height: 5px;
+    }
+
+    .bouton {
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-left: 70px;
+        background-color: #3A8021;
+        color: white;
+
+
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0, 5s;
+        /* effectuez le temps quand le cursor est sur le button*/
+
+    }
+
+    .bouton:hover {
+        /*faire grossir le bouton quand le cursor est dessus*/
+        transform: scale(1.05);
+
+    }
+}
+
+/*FIN DE LA PAGE 4 FORMCONTACT*/
+
+@media screen and (max-width: 680px) {
+
+    /* PAGE 4 FORMCONTACT*/
+
+    .bouton {
+        padding: 5px 10px
+    }
+
+
+    /* PAGE 5 FORMCONNEXION*/
+    .boutonco {
+        padding: 5px 10px;
+
+    }
+
+    .mesure-page-co {
+        height: 100%;
+    }
+
+
+    /*PAGE 6 FORMINSCRIPTION*/
+
+    .bouton-in {
+        padding: 5px 10px;
+    }
+
+
+
 }
