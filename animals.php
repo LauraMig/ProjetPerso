@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include("headerdeux.php")
+;?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
     <title>Remède animale animals</title>
 
-</head>
-
-<body class="corps" id="animalBody">
-    <header class="barremenu">
-        <!--Menu-->
-        <nav class="parent-nav">
-            <ul class="enfant-ul">
-                <div class="sous-enfant-div1">
-                    <a href="home.html"><img class="imgmenu" src=" img/logovenin.jpg" alt="logovenin"></a>
-                    <h1 class="remedeanimale">Remèdes animales</h1>
-                </div>
-                <div class="sous-enfant-div2">
-
-                    <li class="menu-li"><a class="lien1" href="home.html">Accueil</a></li>
-                    <li class="menu-li"><a class="lien1" href="formconnexion.html">Connexion</a></li>
-                    <li class="menu-li"><a class="lien1" href="forminscription.html">Inscription</a></li>
-                    <li class="menu-lo"><img class="menu-logo" src="img/logoDayNight.jpg" alt="logoDayNight"
-                            onclick="changeColorAnimals()"></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
     <!--contenu-->
     <main class="corpspage3">
         <h1 class="titrepage3">Les animaux</h1>
@@ -90,21 +61,6 @@
             </article>
         </section>
     </main>
-    <footer>
-        <nav class="footer1">
-            <ul class="sousfooter1">
-                <li class="f1"><a class="lien1" href="formcontact.html">Contactez-nous</a></li>
-                <li class="f1"><a class="lien1" href="formconnexion.html">Connexion</a></li>
-                <li class="f1"><a class="lien1" href="forminscription.html">Inscrption</a></li>
-            </ul>
-            <ul class="sousfooter2">
-                <li class="f2"><a class="lien1" href="https://www.instagram.com/lolau_dim/"><img class="instagram"
-                            src="img/instagram.png" alt="instagram"></a></li>
-            </ul>
-        </nav>
-    </footer>
-
-    <script src="javaScript/script.js"></script>
-</body>
-
-</html>
+    <?php
+include("footer.php")
+;?>

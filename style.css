@@ -15,6 +15,7 @@
     position: sticky;
     top: 0%;
     border: 4px outset black;
+    z-index: 1000;
 }
 
 .enfant-ul {
@@ -85,9 +86,39 @@
 .menu-logo {
     height: 40px;
     width: 50px;
-    border-radius: 18px;
+    border-radius: 20px;
     margin: 10px;
     cursor: pointer;
+}
+
+.buttonnuit {
+    
+    cursor: pointer;
+    box-shadow: -6px -5px -5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -6px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -6px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin: 0 5px 0px 0px ;
+}
+
+.button-nuit-li {
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 1s;
+
+
+
+}
+
+.buttonnuit:hover {
+    font-size: 15px;
+}
+
+.dark-mode {
+    background-color: #332B34;
+    color: white;
 }
 
 /*.menu-lo:hover {
@@ -133,78 +164,89 @@
 /*****FIN DU FOOTER*****/
 /***** DEBUT DE LA PAGE1 HOME*****/
 
-.section {
+.titrepara {
+    /*background-color: grey;*/
 
-    display: flex;
-    justify-content: space-around;
-
-}
-
-
-
-.un {
-
-    text-align: center;
-    background-image: url(img/imgSerpentBleu.png);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-
-
-}
-
-.paragraphe1 {
-
-    text-align: justify;
-    width: 40%;
     font-family: 'Satisfy', cursive;
-    font-size: 25px;
-    color: white;
-
-    margin: 40% 0px 20px 25px;
-
-
+    font-size: 20px;
 }
 
-.deux {
+.titre {
+    font-size: 26px;
+
+    color: #E0ACAC;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    /*background-color: aqua;*/
+    padding: 20px;
+}
+
+.paragraphe {
+    padding: 20px;
+    text-align: justify;
+    text-align: left;
+    align-items: center;
+    margin: 0px 40px 0px 40px;
+}
+
+.sectionhome {
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.one {
+    /*background-color: #F87575;*/
     padding: 10px;
     margin: 10px;
-    /*jouer avec les p et m de la photo les serpent*/
 }
 
-.imgautresanimaux3 {
-    margin-top: 20px;
-    width: 300px;
+.imagedubas {
     height: 300px;
-
+    width: 300px;
     border-radius: 15px;
     box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
     /*ombres des img*/
+    transition: 3s;
 }
 
-.imgserpent2 {
-    width: 300px;
-    height: 300px;
-
-    border-radius: 15px;
-    box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
-    /*ombres des img*/
+.imagedubas:hover {
+    height: 330px;
+    width: 330px;
 }
 
-.article {
 
-    font-size: 25px;
+.soustitredubas {
     text-align: center;
-
     font-family: 'Satisfy', cursive;
-    /*modifacation des liens serpents et  autres animaux*/
+
+    font-size: 20px;
+    /*background-color: aqua;*/
+    padding: 10px;
+    border: 5px double black;
+    border-radius: 5px;
 }
+
+.lien2 {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3A8021;
+}
+
+.lien2:hover {
+    color: #F87575;
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+
+
+
+
 
 /*****FIN DE LA PAGE 1 HOME*****/
 
@@ -438,7 +480,7 @@
 
 /*FIN DE LA PAGE 4 CONTACT */
 
-/*DEBUT DE LA PAGE 5 CONNEXION*/
+/******DEBUT DE LA PAGE 5 CONNEXION******/
 
 /*pour centrer mon formulaire ...*/
 .formulaireco {
@@ -488,6 +530,7 @@
     border: solid 2px black;
     border-radius: 5px;
     font-family: 'Satisfy', cursive;
+    
 
 }
 
@@ -517,9 +560,9 @@
     transform: scale(1.05);
 }
 
-/*FIN DE LA PAGE 5 FORMCONNEXION*/
+/********FIN DE LA PAGE 5 FORMCONNEXION***********/
 
-/*DEBUT DE LA PAGE 6 FORMINSCRIPTION*/
+/*********DEBUT DE LA PAGE 6 FORMINSCRIPTION********/
 
 
 /*pour centrer mon formulaire ...*/
@@ -629,11 +672,6 @@
 
 }
 
-.imagejs {
-    width: 300px;
-    height: 300px;
-}
-
 .soustitrejs {
     background-color: beige;
     display: flex;
@@ -676,16 +714,141 @@
 
 
 
+/******** carrousel ********/
+
+.quatreimgjs {
+    display: flex;
+    overflow: hidden;
+    width: 800px;
+    height: 300px;
+    border-radius: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+
+
+
+}
+
+.imagejs {
+    flex: 1 0 auto;
+    width: 400px;
+    height: auto;
+    display: none;
+    ;
+
+
+}
+
+.imagejs:first-child {
+    display: block;
+}
+
+/******DEBUT DE LA PAGE VIDEO**************/
+
+.section-ecriture {
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Satisfy', cursive;
+
+}
+
+.titrevideos {
+
+    font-size: 26px;
+    border: 5px double black;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px 0px 20px 0px;
+    padding: 2%;
+    color: #E0ACAC;
+    text-decoration: underline;
+
+
+}
+
+.soustitre {
+
+    font-size: 23px;
+    padding: 15px;
+
+}
+
+.paravideo {
+
+    font-size: 20px;
+}
+
+.section-videos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.article-videos {
+    margin: 20px 0px 20px 0px;
+
+}
+
+
+
+@keyframes paragraphevideo {
+    0% {
+        color: yellow;
+    }
+
+    33% {
+        color: blue;
+    }
+
+    66% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.paragraphevideo {
+    animation: paragraphevideo 5s infinite;
+}
+
+@keyframes soustitrevideo {
+    0% {
+        color: yellow;
+    }
+
+    33% {
+        color: blue;
+    }
+
+    66% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.soustitrevideo {
+    animation: paragraphevideo 5s infinite;
+}
+
 /*******DEBUT DE LA PAGE 7 404 ERROR*******/
 
-html, body {
+/*html, body {
     height: 100%;
-}
+}*/
 
 .corps {
     background-color: white;
     display: flex;
     flex-direction: column;
+
 
 }
 
@@ -708,22 +871,11 @@ html, body {
 /******RESPONSIVE*******/
 /* Media Queries pour écran de 480px à 980px */
 
-/*@media screen and (min-width: 380px) and (max-width: 980px)*/
+/*@media screen and (min-width: 380px) and (max-width: 400px)*/
 @media screen and (max-width: 980px) {
 
     /***** page 1 HOME *****/
-    .parent {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
 
-    .paragraphe1 {
-        width: 90%;
-        margin: 0px auto;
-    }
 
 
     .imgmenu {
@@ -735,15 +887,6 @@ html, body {
         display: none;
     }
 
-    /*.enfant {
-        flex-basis: 100%;
-        margin-top: 10px;
-    }*/
-
-    /*.menu {
-        display: block;
-        margin: 5px 0;
-    }*/
 
     .lien1 {
         display: block;
@@ -753,33 +896,94 @@ html, body {
     }
 
     /* Articles */
-    .section {
+
+
+    /***** DEBUT DE LA PAGE1 HOME*****/
+
+    .titrepara {
+        /*background-color: grey;*/
+
+        font-family: 'Satisfy', cursive;
+        font-size: 20px;
+    }
+
+    .titre {
+        font-size: 26px;
+
+        color: #E0ACAC;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        text-decoration: underline;
+        /*background-color: aqua;*/
         padding: 20px;
     }
 
-    .article {
-        flex-basis: 100%;
-        margin-bottom: 20px;
+    .paragraphe {
+        padding: 16px;
+        /*text-align: justify;
+        text-align: left;
+        align-items: left;*/
+        margin: 0px 40px 0px 40px;
     }
 
-    .imgserpent2 {
-        max-width: 100%;
-        height: 290px;
+    .sectionhome {
+        /*background-color: aqua;*/
+        display: flex;
+        flex-direction: column;
     }
 
-    .imgautresanimaux3 {
-        max-width: 100%;
-        height: auto;
+    .one {
+        /*background-color: #F87575;*/
+        padding: 10px;
+        margin: 10px;
     }
 
-    .enfant2,
-    .enfant3 {
-        font-size: 1.5rem;
+    .imagedubas {
+        height: 250px;
+        width: 250px;
+        border-radius: 15px;
+        box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -8px -5px 5px 0px rgba(0, 0, 0, 0.75);
+        /*ombres des img*/
+        transition: 3s;
+
+    }
+
+    .imagedubas:hover {
+        height: 330px;
+        width: 330px;
+    }
+
+
+    .soustitredubas {
         text-align: center;
+        font-family: 'Satisfy', cursive;
+        margin: 7px;
+        font-size: 20px;
+        width: 150px;
+
+        background-color: aqua;
+        padding: 3 px;
+        border: 3px double black;
+        border-radius: 5px;
     }
+
+    .lien2 {
+        text-decoration: none;
+        cursor: pointer;
+        color: #3A8021;
+    }
+
+    .lien2:hover {
+        color: #F87575;
+        font-size: 30px;
+        transition: 1s;
+    }
+
+
+
+    /***** FIN DE LA PAGE 1 HOME*****/
 
     /* FOOTER */
     .footer1 {
@@ -814,7 +1018,7 @@ html, body {
     }
 
 
-    /***** FIN DE LA PAGE 1 HOME*****/
+
     /***** DEBUT DE LA PAGE 2 SNAKE**/
 
     .titrepage2 {
@@ -1040,3 +1244,191 @@ html, body {
 
 
 }
+
+
+@media screen and (min-width: 380px) and (max-width: 400px) {
+
+
+    /* HEADER RESPONSIVE */
+    .barremenu {
+        position: sticky;
+        top: 0%;
+    }
+
+    .parent-nav {
+        background-color: #3A8021;
+        position: sticky;
+        top: 0%;
+        border: 4px outset black;
+        z-index: 1000;
+    }
+
+    .enfant-ul {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Satisfy', cursive;
+        font-size: 10px;
+    }
+
+    .sous-enfant-div1 {
+        display: flex;
+        /*justify-content: space-around;*/
+    }
+
+    .sous-enfant-div2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-li {
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    .imgmenu {
+        /* cest ok*/
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+        font-size: 10px;
+    }
+
+    .remedeanimale {
+        color: #E0ACAC;
+        font-family: 'Satisfy', cursive;
+        margin: 10px 0px 5px 5px;
+        font-size: 25px;
+    }
+
+    .lien1:hover {
+        color: #F87575;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    .lien1 {
+        text-decoration: none;
+        cursor: pointer;
+        color: #E0ACAC;
+    }
+
+    .lien2 {
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .lien2:hover {
+        color: #F87575;
+        font-size: 25px;
+        transition: 1s;
+    }
+
+    .menu-logo {
+        height: 30px;
+        width: 40px;
+        border-radius: 15px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .buttonnuit {
+        cursor: pointer;
+        box-shadow: -6px -5px -5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -6px -5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -6px -5px 5px 0px rgba(0, 0, 0, 0.75);
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        margin: 0 3px 0px 0px;
+    }
+
+    .button-nuit-li {
+        border-radius: 10px;
+        margin-top: 10px;
+        transition: 1s;
+    }
+
+    .buttonnuit:hover {
+        font-size: 12px;
+    }
+
+
+
+/* FOOTER RESPNSIVE*/
+
+    .footer1 {
+        display: block;
+        background-color: black;
+        color: #E0ACAC;
+        border: 4px outset grey;
+    }
+
+    .f1 {
+        /* list-style-image: url(img/imgFooter.png); */
+        font-size: 5px;
+        margin-bottom: 2px;
+        font-family: 'Satisfy', cursive;
+    }
+
+    .sousfooter2 .instagram {
+        text-decoration: none;
+        width: 20px;
+        margin-top: 15%;
+        margin-right: 8px;
+        display: none;
+    }
+
+    .f2 {
+        list-style-type: none;
+    }
+
+    .sousfooter1 {
+        margin-left: 5px;
+    }
+
+/* LES VIDEOS*/
+
+    .videos{
+        height: 300px;
+        width: 300px;
+    }
+
+
+
+/* PAGE HOME */
+
+    .paragraphe {
+        padding: 20px;
+        text-align: justify;
+        text-align: left;
+        align-items: center;
+        margin: 0px 40px 0px 40px;
+        font-size: 15px;
+    }
+
+    .imagedubas {
+        height: 200px;
+        width: 200px;
+    }
+
+    .img-soustitre{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       
+        align-items: center;
+    }
+
+/* CARROUSEL RESPONSIVE*/
+    .quatreimgjs{
+        height: 300px;
+        width: 350px;
+    }
+    
+}
+
+
+     
+    
+

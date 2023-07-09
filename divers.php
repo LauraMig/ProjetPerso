@@ -1,47 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include("headerdeux.php")
+;?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <title>Remède animale home</title>
 
-</head>
-
-<body class="corps">
-    <header class="barremenu">
-        <!--Menu-->
-        <nav class="parent-nav">
-            <ul class="enfant-ul">
-                <div class="sous-enfant-div1">
-                    <a href="home.html"><img class="imgmenu" src=" img/logovenin.jpg" alt="logovenin"></a>
-                    <h1 class="remedeanimale">Remèdes animales</h1>
-                </div>
-                <div class="sous-enfant-div2">
-
-                    <li class="menu-li"><a class="lien1" href="home.html">Accueil</a></li>
-                    <li class="menu-li"><a class="lien1" href="formconnexion.html">Connexion</a></li>
-                    <li class="menu-li"><a class="lien1" href="forminscription.html">Inscription</a></li>
-
-                </div>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section class="sectionjs">
             <h1 class="titrejs"> Les divers</h1>
             <article class="quatreimgjs">
-                <img class="imagejs" src="img/veuveNoireAraignee.jpeg" alt=" La veuve noire">
-                <img class="imagejs" src="img/abeilleMiel.png" alt="L'abeille">
-                <img class="imagejs" src="img/scorpionArachnida.jpg" alt="Le scorpion">
-                <img class="imagejs" src="img/mygaleAustralie.jpg" alt="La mygale">
+                <img class="imagejs" src="img/image1.png" alt=" La veuve noire">
+                <img class="imagejs" src="img/image2.png" alt="L'abeille">
+                <img class="imagejs" src="img/image3.png" alt="Le scorpion">
+                <img class="imagejs" src="img/image4.png" alt="La mygale">
+
             </article>
+
+
         </section>
         <section>
             <article>
@@ -148,26 +122,41 @@
                     ignoré le rôle potentiel de la membrane cellulaire dans leur activité", explique Sonia Troeira
                     Henriques, co-auteure de l'étude. En clair, la toxine se lie aux récepteurs de la douleur situés
                     dans la membrane des neurones pour agir comme un antidouleur.</p>
-                <div class="boutonjs"><button class="buttonjs" onclick="handleClick()"> Clique ici
+                <div class="boutonjs"><button class="buttonjs" onclick="buttonMy()"> Clique ici
                     </button></div>
             </article>
         </section>
     </main>
-    <footer>
-        <nav class="footer1">
-            <ul class="sousfooter1">
-                <li class="f1"><a class="lien1" href="formcontact.html">Contactez-nous</a></li>
-                <li class="f1"><a class="lien1" href="formconnexion.html">Connexion</a></li>
-                <li class="f1"><a class="lien1" href="forminscription.html">Inscrption</a></li>
-            </ul>
-            <ul class="sousfooter2">
-                <li class="f2"><a class="lien1" href="https://www.instagram.com/lolau_dim/"><img class="instagram"
-                            src="img/instagram.png" alt="instagram"></a></li>
-            </ul>
-        </nav>
-    </footer>
-    <script src="javaScript/script.js"></script>
-</body>
+    <!-- <script src="script/script.js"></script> -->
+    <script>
+       // Realiser une carrousel 
+// Sélectionner les éléments du carrousel
+const carousel = document.querySelector('.quatreimgjs');
+const images = carousel.querySelectorAll('.imagejs');
 
-</html>
-https://www.nationalgeographic.fr/video/animaux/oui-le-venin-de-serpents-ou-de-mygales-peut-sauver-des-vies
+// Variables de contrôle du carrousel
+let currentIndex = 0;
+const interval = 5000; // Durée d'affichage pour chaque image en millisecondes
+
+// Fonction pour afficher l'image suivante dans le carrousel
+function showNextImage() {
+    // Cacher l'image courante
+    images[currentIndex].style.display = 'none';
+
+    // Calculer l'index de l'image suivante
+    currentIndex = (currentIndex + 1) % images.length;
+
+    // Afficher l'image suivante
+    images[currentIndex].style.display = 'block';
+}
+
+// Démarrer le carrousel
+setInterval(showNextImage, interval); 
+ </script>
+<!-- </body>
+
+</html> -->
+
+<?php
+include("footer.php")
+;?>
